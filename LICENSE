@@ -1,0 +1,46 @@
+mxDOS License
+-------------
+
+Copyright 2025 wai-ming-chan
+
+mxDOS is an iOS application that links against DOSBox Staging, which
+is licensed under the "GNU General Public License version 2 or later"
+(GPL-2.0-or-later). As a work that incorporates and builds upon
+DOSBox Staging, mxDOS is therefore also released under the
+GPL-2.0-or-later terms.
+
+The full text of the GPL-2.0 license can be found at:
+https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+
+Third-party Libraries
+---------------------
+
+mxDOS links against the following libraries, which carry their own
+license terms:
+
+- DOSBox Staging (https://github.com/dosbox-staging/dosbox-staging)
+  GPL-2.0-or-later
+
+- SDL2 (https://github.com/libsdl-org/SDL)
+  zlib license
+
+- opus (https://opus-codec.org/)
+  BSD 3-Clause
+
+- opusfile (https://opus-codec.org/)
+  BSD 3-Clause
+
+- libogg (https://xiph.org/ogg/)
+  BSD 3-Clause
+
+The above licenses are compatible with the GNU GPL.
+
+
+Game Files
+----------
+
+Game files and disc images are not part of this repository and remain
+the property of their respective copyright holders. Nothing in this
+license grants any rights to use, copy, or distribute third-party
+game software.

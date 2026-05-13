@@ -1,0 +1,32 @@
+// Build settings for linking DOSBox Staging + dependencies (iOS ARM64)
+// Apply to target: mxDOS → Build Settings → Based On: mxDOS-DOSBox.xcconfig
+
+IOS_DEPS = $(SRCROOT)/../../ios-deps
+DOSBOX_BUILD = $(SRCROOT)/../../dosbox-staging/build-ios
+
+HEADER_SEARCH_PATHS = $(inherited) \
+    $(IOS_DEPS)/include/dosbox \
+    $(IOS_DEPS)/include/SDL2 \
+    $(IOS_DEPS)/include/opus \
+    $(IOS_DEPS)/include \
+    $(DOSBOX_BUILD)
+
+OTHER_LDFLAGS = $(inherited) \
+    $(IOS_DEPS)/lib/libdosbox-ios.a \
+    -lz \
+    -framework CoreMIDI \
+    -framework CoreFoundation \
+    -framework CoreVideo \
+    -framework CoreAudio \
+    -framework AudioToolbox \
+    -framework AVFoundation \
+    -framework CoreBluetooth \
+    -framework CoreGraphics \
+    -framework CoreMotion \
+    -framework Foundation \
+    -weak_framework GameController \
+    -framework Metal \
+    -framework OpenGLES \
+    -framework QuartzCore \
+    -framework UIKit \
+    -weak_framework CoreHaptics
